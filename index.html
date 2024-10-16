@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Muqadas!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="navbar">
+        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#birthday-card">Birthday Card</a>
+          <a href="#message">Birthday Message</a>
+          <a href="#wishing">Wishing Letter</a>
+          <a href="#effects">Moments</a>
+          <a href="#thank-you">Thank You</a>
+          <a href="#last-message">Last Message</a>
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <section class="home" id="home">
+      <video autoplay id="backgroundVideo">
+        <source src="1st-video.mp4" type="video/mp4" />
+        <source src="2nd-video.mp4" type="video/mp4" />
+        <source src="3rd-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <div class="home-content">
+          <div class="text-1">Hello, this is Nadeem</div>
+          <div class="text-2">Happy Birthday</div>
+          <div class="text-3">
+            And I'm celebrating <span class="typing"></span>
+          </div>
+          <div class="emoji">✨💕😘🎈</div>
+        </div>
+      </div>
+      <!-- Balloons -->
+      <img
+        src="1-ballon.jpg"
+        alt="Balloon"
+        class="balloon"
+        style="left: 10%"
+      /><img
+        src="2-ballon.jpg"
+        alt="Balloon"
+        class="balloon"
+        style="left: 40%"
+      />
+      <img src="3-ballon.jpg" alt="Balloon" class="balloon" style="left: 70%" />
+      <!-- Hearts and Loves -->
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="love"></div>
+      <div class="love"></div>
+    </section>
+
+    <section id="birthday-card">
+      <h2>Birthday Card</h2>
+      <div class="gallery">
+        <div class="card">
+          <img
+            src="https://cdn.pixabay.com/photo/2020/10/06/21/54/cake-5633461__480.png"
+            alt="birthday"
+            class="birthday"
+          />
+          <div class="text">
+            <h1>Happy Birthday!</h1>
+            <p>Have a great future..!</p>
+            <p>You mean the world to me</p>
+            <div class="credit">
+              Made with <span style="color: tomato">❤</span> by
+              <a href="https://www.learningrobo.com/">Nadeem</a>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="emoji">✨💕😘🎈</div>
+    </section>
+
+    <section id="message" class="message-section">
+      <h2>❤️Birthday Message❤️</h2>
+      <div>
+        <span class="circle"></span>
+        <p>
+          Happy Birthday my dear Muqadas, today I have to tell you something
+          that your creativity and support have filled my life with so much love
+          and joy. You are my rock, my partner in crime, and my forever love.
+        </p>
+      </div>
+      <div>
+        <span class="circle"></span>
+        <p>
+          I am so much grateful to have you by my side, guiding me through
+          life's ups and downs with your unwavering strength and kindness. Your
+          presence in my life is a gift that I cherish every day.
+        </p>
+      </div>
+      <div>
+        <span class="circle"></span>
+        <p>
+          On this special day, I want you to know how much you mean to me. You
+          are the light that brightens my world and the love that fills my
+          heart. Happy Birthday, my dear Muqadas. I love you more than words can
+          express.
+        </p>
+      </div>
+      <div>
+        <span class="circle"></span>
+        <p>With all my love,</p>
+        <p>Nadeem Ahmad</p>
+      </div>
+      <div class="emoji">✨💕😘🎈</div>
+    </section>
+    <!--  -->
+
+    <div class="notification" id="notification">
+      Your Birthday Card is downloading!
+    </div>
+
+    <section id="wishing">
+      <h2>Our Life Story👇</h2>
+      <button class="download-button" onclick="showPasswordInput()">
+        Wishing Letter
+      </button>
+      <div class="password-container" id="passwordContainer">
+        <input
+          type="password"
+          class="password-input"
+          id="passwordInput"
+          placeholder="Enter Password"
+        />
+        <button
+          class="eye-button"
+          id="togglePassword"
+          onclick="togglePassword()"
+        >
+          <img src="eye-show.png" alt="Show Password" id="eyeIcon" width="20" />
+        </button>
+        <button
+          class="submit-button"
+          id="submitPassword"
+          onclick="checkPassword()"
+        >
+          Submit
+        </button>
+        <div class="error-message" id="errorMessage">
+          Incorrect password. Please try again.
+        </div>
+        <div class="download-options" id="downloadOptions">
+          <p>Correct password! Would you like to download the Birthday Card?</p>
+          <button class="submit-button" onclick="downloadCard()">
+            Download Card
+          </button>
+        </div>
+      </div>
+      <div class="emoji">✨💕😘🎈</div>
+    </section>
+
+    <section id="effects">
+      <h2>Sweet Moments</h2>
+      <div class="gallery">
+        <img src="1st-Muqadas.jpg" alt="Moment 1" height="175" />
+        <img src="2nd-Muqadas.jpg" alt="Moment 2" height="175" />
+        <img src="3rd-Muqadas.jpeg" alt="Moment 3" height="175" />
+        <img src="4th-Muqadas.jpg" alt="Moment 4" height="175" />
+      </div>
+      <div class="emoji">✨💕😘🎈</div>
+    </section>
+    <!--  -->
+
+    <section id="thank-you" class="thank-you-section">
+      <h2>Thank You</h2>
+      <div class="thank-you-message">
+        <p onclick="showLoveMessage(1)">
+          Thank you for being my unwavering support and strength.
+        </p>
+        <p onclick="showLoveMessage(2)">
+          Your love fills my life with joy and purpose every day.
+        </p>
+        <p onclick="showLoveMessage(3)">
+          I appreciate your kindness and understanding more than words can
+          express.
+        </p>
+        <p onclick="showLoveMessage(4)">
+          You inspire me to be the best version of myself.
+        </p>
+        <p onclick="showLoveMessage(5)">
+          Thank you for every laugh, every hug, and every sweet moment we share.
+        </p>
+        <p onclick="showLoveMessage(6)">
+          Your loyalty means the world to me, and I cherish it deeply.
+        </p>
+        <p onclick="showLoveMessage(7)">
+          I am grateful for your patience and encouragement through every
+          challenge.
+        </p>
+        <p onclick="showLoveMessage(8)">
+          Thank you for believing in us and our beautiful journey together.
+        </p>
+        <p onclick="showLoveMessage(9)">
+          Your presence in my life is a precious gift I treasure endlessly.
+        </p>
+        <p onclick="showLoveMessage(10)">
+          I love you more than you can ever know, and I'm thankful for you every
+          single day.
+        </p>
+      </div>
+      <div class="heart" id="heart">&#10084;</div>
+      <br />
+      <br />
+    </section>
+
+    <!-- Scroll buttons -->
+    <button class="scroll-button scroll-up" onclick="scrollToTop()">
+      <img src="up.png" alt="Scroll Up" />
+    </button>
+    <button class="scroll-button scroll-down" onclick="scrollToBottom()">
+      <img src="down.png" alt="Scroll Down" />
+    </button>
+    <br />
+    <!-- Once again happy birthday -->
+    <section id="last-message">
+      <div class="background"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+
+      <div class="message">Once again</div>
+      <div class="happy-birthday">Happy Birthday Muqadas!</div>
+      <div class="hearts">❤️❤️❤️</div>
+      <div class="emoji">🎂🎊🎁</div>
+    </section>
+
+    <!-- Javascript code  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+      new Typed(".typing", {
+        strings: [
+          "Happy Birthday my Muqadas!",
+          "Happy Birthday, my Moon!",
+          "Happy Birthday, my World!",
+        ],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+      });
+
+      const video = document.getElementById("backgroundVideo");
+      const sources = video.getElementsByTagName("source");
+      let currentSourceIndex = 0;
+
+      // Play videos in sequence with sound
+      video.onended = () => {
+        currentSourceIndex = (currentSourceIndex + 1) % sources.length;
+        video.src = sources[currentSourceIndex].src;
+        video.play();
+      };
+      //
+      function toggleTheme() {
+        const body = document.body;
+        const header = document.getElementById("header");
+        body.classList.toggle("light");
+        header.classList.toggle("light");
+        const themeToggle = document.querySelector(".theme-toggle");
+        themeToggle.textContent = body.classList.contains("light")
+          ? "🌞"
+          : "🌙";
+      }
+
+      //
+
+      function showPasswordInput() {
+        document.getElementById("passwordContainer").style.display = "block";
+      }
+
+      function checkPassword() {
+        const password = document.getElementById("passwordInput").value;
+        const errorMessage = document.getElementById("errorMessage");
+        const downloadOptions = document.getElementById("downloadOptions");
+
+        if (password === "nadeem@2024") {
+          errorMessage.style.display = "none";
+          downloadOptions.style.display = "block";
+        } else {
+          errorMessage.style.display = "block";
+          downloadOptions.style.display = "none";
+        }
+      }
+
+      function downloadCard() {
+        const link = document.createElement("a");
+        link.href = "Birthday-card.pdf"; // Replace with your actual file path
+        link.download = "BirthdayCard.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        document.getElementById("notification").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("notification").style.display = "none";
+        }, 3000);
+      }
+
+      function togglePassword() {
+        const passwordInput = document.getElementById("passwordInput");
+        const toggleButton = document.getElementById("togglePassword");
+        const eyeIcon = document.getElementById("eyeIcon");
+        const type = passwordInput.type === "password" ? "text" : "password";
+        passwordInput.type = type;
+        eyeIcon.src = type === "password" ? "eye-show.png" : "eye-hide.png";
+      }
+
+      // function showPasswordInput() {
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function scrollToBottom() {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+      // Thank You :
+      const heart = document.getElementById("heart");
+      heart.addEventListener("click", () => {
+        alert("Your love means everything to me!");
+      });
+
+      function showLoveMessage(index) {
+        const messages = [
+          "Your support makes every day brighter!",
+          "You are the reason for my smile!",
+          "Your kindness is a treasure I cherish.",
+          "You spark joy in my heart!",
+          "Every moment with you is a gift.",
+          "Your loyalty is my anchor.",
+          "Thank you for being you!",
+          "Together, we create beautiful memories.",
+          "Your presence brings me peace.",
+          "I am endlessly grateful for you.",
+        ];
+        alert(messages[index - 1]);
+      }
+    </script>
+  </body>
+</html>
